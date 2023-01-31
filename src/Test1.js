@@ -16,6 +16,18 @@ class Test1 extends React.Component {
     val++;
     this.setState({ s1: val });
   };
+
+  static getDerivedStateFromProps(props, state) {
+    console.log("get derived state");
+    // return ({"s1":props.arg})
+  }
+
+  componentDidMount() {
+    console.log("component did mount");
+  }
+  componentDidUpdate() {
+    console.log("component did update");
+  }
   render() {
     console.log("render1");
     return (
