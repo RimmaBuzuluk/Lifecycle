@@ -19,6 +19,7 @@ class Test1 extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     console.log("get derived state");
+    return null;
     // return ({"s1":props.arg})
   }
 
